@@ -24,7 +24,7 @@
 * Como criar rotas no reactjs - react router dom
 * Deploy e configuração para evitar o erro 404
 
-O site já está no ar e você pode acessar aqui: [quero ser dev](https://queroserdev.com)
+O site já está no ar e você pode acessar aqui: [Meu site pessoal](https://site-pessoal-react-eight.vercel.app/)
 
 ---
 
@@ -78,6 +78,11 @@ Siga os passos e inclua as informações abaixo:
 <br />
 <br />
 
+### 😎 Falta finalizar
+
+- Estilo das páginas portfolio e contato
+- Integrar contato com firebase
+- incluir variaveis no deploy
 ---
 
 _Foi incrível compartilhar essa jornada com você! Qualquer dúvida ou sugestão, chama no contatinho!_
