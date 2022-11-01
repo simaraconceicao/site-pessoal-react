@@ -1,0 +1,36 @@
+.sobreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bioTitle {
+  font-size: 3rem;
+  padding: 2rem;
+  color: #474a51
+}
+
+.bioContainer {
+  width: 30rem;
+}
+
+.bioImage {
+  width: 40%;
+}
+
+.bioText {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #474a51
+}
+
+@media(max-width: 765px) {
+  .sobreContainer {
+    disply: flex;
+    flex-direction: column;
+  }
+
+  .bioImage {
+    width: 100%;
+  }
+}
