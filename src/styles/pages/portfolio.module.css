@@ -1,0 +1,98 @@
+.projectsContainer {
+  width: 100%;
+  color: #686AAC;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.projectsTitle {
+  font-size: 4rem;
+}
+
+.cardsContainer {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.card {
+  width: 30%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+
+.cardImage {
+  width: 100%;
+}
+
+.cardLink {
+  background-color: #686AAC;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cardsRepoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.cardRepo {
+  background: #686AAC;
+  width: 20%;
+  height: 230px;
+  padding: 2rem;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cardRepoText {
+  color: #fff;
+}
+
+.cardRepoLink {
+
+}
+
+
+@media(max-width: 765px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 320px;
+  }
+
+  .cardRepo {
+    width: 3200px;
+  }
+
+}

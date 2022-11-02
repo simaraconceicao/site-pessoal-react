@@ -4,15 +4,18 @@ import { Header } from '../components/Header'
 import { ArrowBendDownRight } from 'phosphor-react'
 import Axios from 'axios'
 
+import styles from '../styles/pages/portfolio.module.css'
+
+
 const list = [
-  {
-    id: 1,
-    nome: 'Quero ser dev',
-    descricao: 'Um site com conteúdos de introdução à programação.',
-    conteudo: 'Feito com html, css e js.',
-    imagem: 'https://media.giphy.com/media/NpKOhpooYL1Rr7Uuav/giphy.gif',
-    link: 'https://queroserdev.com/'
-  },
+  // {
+  //   id: 1,
+  //   nome: 'Quero ser dev',
+  //   descricao: 'Um site com conteúdos de introdução à programação.',
+  //   conteudo: 'Feito com html, css e js.',
+  //   imagem: 'https://media.giphy.com/media/NpKOhpooYL1Rr7Uuav/giphy.gif',
+  //   link: 'https://queroserdev.com/'
+  // },
   {
     id: 2,
     nome: 'TODO list',
@@ -55,34 +58,39 @@ export function Portfolio() {
   return (
     <>
       <Header title="Meus projetinhos" image={portfolioImg} />
-      <div>
-       {list.map(repo => {
-         return(
-          <div key={repo.id}>
-            <h1>{repo.nome}</h1>
-            <img src={repo.imagem} />
-            <p>{repo.descricao}</p>
-            <a href={repo.link} target="_blank" rel="noreferrer">
-              <ArrowBendDownRight size={32} weight="thin" color="#fff" />
-            </a>
-         </div>
-         )
-       })}
-      </div>
-
-      <h1>Outros Projetos no meu Github</h1>
-      <div>
-          <div>
-            {repositories.map(repo=>
-              <div>
-                <h3 key={repo.id}>{repo.name}</h3>
-                <p>{repo.description}</p>
-                <a href={repo.html_url} target="_blank" rel="noreferrer">
-                  <ArrowBendDownRight size={32} weight="thin" color="#fff" />
+      <div className={styles.projectsContainer}>
+        <h2 className={styles.projectsTitle}>Favoritos</h2>
+        <div className={styles.cardsContainer}>
+          {list.map(repo => {
+            return(
+              <div className={styles.card} key={repo.id}>
+                <h1>{repo.nome}</h1>
+                <img className={styles.cardImage} src={repo.imagem} />
+                <p className={styles.cardText}>{repo.descricao}</p>
+                <a className={styles.cardLink}href={repo.link} target="_blank" rel="noreferrer">
+                  Ver projeto
                 </a>
               </div>
-            )}
-          </div>
+            )
+          })}
+        </div>
+      </div>
+
+      <div className={styles.projectsContainer}>
+        <h2 className={styles.projectsTitle}>Outros projetos no meu Github</h2>
+        <div className={styles.projectsContainer}>
+            <div className={styles.cardsRepoContainer}>
+              {repositories.map(repo=>
+                <div className={styles.cardRepo}>
+                  <h3 className={styles.cardRepoText} key={repo.id}>{repo.name}</h3>
+                  <p className={styles.cardRepoText}>{repo.description}</p>
+                  <a className={styles.cardRepoLink}href={repo.html_url} target="_blank" rel="noreferrer">
+                    <ArrowBendDownRight size={32} weight="thin" color="#fff" />
+                  </a>
+                </div>
+              )}
+            </div>
+        </div>
       </div>
     </>
   )

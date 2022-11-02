@@ -80,7 +80,6 @@ Siga os passos e inclua as informações abaixo:
 
 ### 😎 Falta finalizar
 
-- Estilo das páginas portfolio e contato
 - Integrar contato com firebase
 - incluir variaveis no deploy
 ---
