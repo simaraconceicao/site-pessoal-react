@@ -77,11 +77,6 @@ Siga os passos e inclua as informações abaixo:
 
 <br />
 <br />
-
-### 😎 Falta finalizar
-
-- Integrar contato com firebase
-- incluir variaveis no deploy
 ---
 
 _Foi incrível compartilhar essa jornada com você! Qualquer dúvida ou sugestão, chama no contatinho!_

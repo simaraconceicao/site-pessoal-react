@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import contatoImg from '../assets/contato.svg'
 import { Header } from '../components/Header'
+import { ref, push, set } from 'firebase/database'
+import { database } from '../service/firebase'
 
 import styles from '../styles/pages/contato.module.css'
 
@@ -25,6 +27,14 @@ export function Contato() {
     event.preventDefault()
 
     console.log('mensagem enviada', nome, email, mensagem)
+
+    const postListRef = ref(database, 'mensagens')
+    const newPostRef = push(postListRef)
+    set(newPostRef, {
+      text: mensagem,
+      email: email,
+      nome: nome
+    })
 
     setMensagem('')
     setNome('')
