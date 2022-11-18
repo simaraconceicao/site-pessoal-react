@@ -62,10 +62,19 @@ Siga os passos e inclua as informações abaixo:
 | Faça o fork                 | `botão de forkar`  |
 | Faça o clone                | `git clone`        |
 | Instale as dependências após acessar a pasta projeto    | `npm i`            |
-| Crie as variaveis de ambiente para integrar com Firebase e inclua os valores da sua conta           | `conforme .env.example`|
+| Crie as variaveis de ambiente para integrar com Firebase e inclua os valores da sua conta           | `conforme .env.example e lista abaixo`|
 | Rode o projeto              | `npm run dev`       |
 
+**Variáveis de ambiente**
 
+ * VITE_API_KEY=
+ * VITE_AUTH_DOMAIN=
+ * VITE_PROJECT_ID=
+ * VITE_STORAGE_BUCKET=
+ * VITE_MESSAGING_SENDER_ID=
+ * VITE_APP_ID=
+ * VITE_DATABASE_URL=
+ 
 <br />
 <br />
 
